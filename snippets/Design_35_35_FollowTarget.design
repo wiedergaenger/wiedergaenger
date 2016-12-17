@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <actor-enabledisable-snippet comment="false" x="37" y="93">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="Follow Path"/>
+                        </actor-enabledisable-snippet>
+                        <if comment="false" x="37" y="120">
+                            <group eventID="1" id="-1">
+                                <set-val-35-2 comment="false" x="48" y="158">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="2"/>
+                                        </get-xy>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="2"/>
+                                        </get-xy>
+                                    </minus>
+                                </set-val-35-2>
+                                <set-val-35-3 comment="false" x="48" y="196">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                    </minus>
+                                </set-val-35-3>
+                                <set-val-35-4 comment="false" x="48" y="234">
+                                    <sqrt comment="false" id="0" x="0" y="0">
+                                        <plus comment="false" id="0" x="0" y="0">
+                                            <pow comment="false" id="0" x="0" y="0">
+                                                <get-val-35-2 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </pow>
+                                            <pow comment="false" id="1" x="0" y="0">
+                                                <get-val-35-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </pow>
+                                        </plus>
+                                    </sqrt>
+                                </set-val-35-4>
+                                <set-val-35-5 comment="false" x="48" y="274">
+                                    <to-degreesradians comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <atan2 comment="false" id="1" x="0" y="0">
+                                            <get-val-35-3 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-35-2 comment="false" id="1" x="0" y="0"/>
+                                        </atan2>
+                                    </to-degreesradians>
+                                </set-val-35-5>
+                                <if comment="false" x="48" y="317">
+                                    <group eventID="1" id="-1">
+                                        <if comment="false" x="59" y="357">
+                                            <group eventID="1" id="-1">
+                                                <setvel comment="false" x="70" y="382">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-35-5 comment="false" id="1" x="0" y="0"/>
+                                                    <plus comment="false" id="2" x="0" y="0">
+                                                        <get-val-35-9 comment="false" id="0" x="0" y="0"/>
+                                                        <times comment="false" id="1" x="0" y="0">
+                                                            <get-val-35-6 comment="false" id="0" x="0" y="0"/>
+                                                            <div comment="false" id="1" x="0" y="0">
+                                                                <minus comment="false" id="0" x="0" y="0">
+                                                                    <get-val-35-4 comment="false" id="0" x="0" y="0"/>
+                                                                    <get-val-35-7 comment="false" id="1" x="0" y="0"/>
+                                                                </minus>
+                                                                <get-val-35-10 comment="false" id="1" x="0" y="0"/>
+                                                            </div>
+                                                        </times>
+                                                    </plus>
+                                                </setvel>
+                                            </group>
+                                            <get-val-35-8 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <else comment="false" x="59" y="446">
+                                            <group eventID="1" id="-1">
+                                                <setvel comment="false" x="70" y="466">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <get-val-35-5 comment="false" id="1" x="0" y="0"/>
+                                                    <get-val-35-6 comment="false" id="2" x="0" y="0"/>
+                                                </setvel>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <more comment="false" id="0" x="0" y="0">
+                                            <get-val-35-4 comment="false" id="0" x="0" y="0"/>
+                                            <get-val-35-7 comment="false" id="1" x="0" y="0"/>
+                                        </more>
+                                        <not comment="false" id="1" x="0" y="0">
+                                            <and comment="false" id="0" x="0" y="0">
+                                                <get-val-35-11 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-35-12 comment="false" id="1" x="0" y="0"/>
+                                            </and>
+                                        </not>
+                                    </and>
+                                </if>
+                                <else comment="false" x="48" y="522">
+                                    <group eventID="1" id="-1">
+                                        <setvel comment="false" x="59" y="542">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="0"/>
+                                        </setvel>
+                                    </group>
+                                </else>
+                                <set-val-35-12 comment="false" x="48" y="581">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-35-12>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <value comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <int id="1" val="0"/>
+                                </value>
+                                <isalive comment="false" id="1" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                </isalive>
+                            </and>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <lesseq comment="false" id="0" x="0" y="0">
+                            <abs comment="false" id="0" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="1"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                </minus>
+                            </abs>
+                            <int id="1" val="100"/>
+                        </lesseq>
+                        <lesseq comment="false" id="1" x="0" y="0">
+                            <abs comment="false" id="0" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="1"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                </minus>
+                            </abs>
+                            <int id="1" val="100"/>
+                        </lesseq>
+                    </and>
+                </if>
+                <else comment="false" x="26" y="630">
+                    <group eventID="1" id="-1">
+                        <actor-enabledisable-snippet comment="false" x="37" y="650">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="Follow Path"/>
+                        </actor-enabledisable-snippet>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-35-10 comment="false" x="26" y="40">
+                    <sqrt comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <pow comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <int id="1" val="2"/>
+                            </pow>
+                            <pow comment="false" id="1" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="2"/>
+                            </pow>
+                        </plus>
+                    </sqrt>
+                </set-val-35-10>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-collide-actor comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-35-12 comment="false" x="26" y="47">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-35-12>
+            </group>
+            <ACTOR eid="var" id="0" vid="1"/>
+        </event-collide-actor>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>
